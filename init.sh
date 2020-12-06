@@ -19,6 +19,8 @@ if [[ `uname` == "Darwin" ]]; then
 
   mv -f $HOME/.config/.zshrc $HOME/.config/.hushlogin $HOME/.config/.vimrc $HOME/.config/vim/ $HOME/.config/.hammerspoon/ $HOME/
   source $HOME/.zshrc
+  chmod 755 /usr/local/share/zsh/site-functions
+  chmod 755 /usr/local/share/zsh
 else
   echo 'Unknown'
 fi
